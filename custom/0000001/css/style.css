@@ -72,10 +72,15 @@ figure {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding-bottom: 77px;
 }
 
 .product-item {
   width: 396px;
+}
+
+.product-item:not(:last-child) {
+  margin-right: 6px;  
   margin-bottom: 40px;
 }
 
@@ -83,10 +88,6 @@ figure {
   .product-item {
     margin-bottom: 0;
   }
-}
-
-.product-item:not(:last-child) {
-  margin-right: 6px;
 }
 
 .product-caption {
@@ -102,4 +103,35 @@ figure {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.section-formula {
+  height: 714px;
+  max-width: 1300px;
+  background-image: url("../assets/background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.formula-image {
+  position: absolute;
+  object-fit: scale-down;
+  top: 64.5px;
+  left: 0;
+}
+
+.formula-mascara-open{
+  position: absolute;
+  object-fit: scale-down;
+  top: 0;
+  left: 540px;
+}
+
+.formula-mascara-close{
+  position: absolute;
+  object-fit: scale-down;
+  top: 209px;
+  left: 630px;
 }
