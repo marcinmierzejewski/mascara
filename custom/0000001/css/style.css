@@ -76,7 +76,7 @@ figure {
 }
 
 .product-item {
-  width: 396px;  
+  width: 396px;
 }
 
 .product-item:not(:last-child) {
@@ -117,7 +117,7 @@ figure {
   }
 }
 
-.wrapper-formula {   
+.wrapper-formula {
   display: flex;
   max-width: 1300px;
   align-items: flex-start;
@@ -145,11 +145,7 @@ figure {
   justify-content: center;
   width: 600px;
   text-align: center;
-  /* width: 370px;
-  margin-right: 127px; */
   margin-top: 98px;
-  /* padding-top: 98px;
-  padding-right: 227px; */
 }
 
 @media screen and (min-width: 1300px) {
@@ -166,9 +162,6 @@ figure {
   display: block;
   margin-bottom: 45px;
   text-transform: uppercase;
-  /* width: 254px; */
-  /* padding-top: 98px;
-  padding-left: 227px; */
 }
 
 .formula-mascara-open,
@@ -179,10 +172,10 @@ figure {
 
 .formula-vegan {
   display: inline-block;
-    position: absolute;
-    top: 60%;
-    right: 50%;
-    transform: translateX(50%);
+  position: absolute;
+  top: 60%;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 @media screen and (min-width: 1300px) {
@@ -195,10 +188,8 @@ figure {
     width: 370px;
     margin-right: 102px;
     margin-top: 98px;
-    /* padding-top: 98px;
-    padding-right: 227px; */
   }
-  
+
   .formula-image {
     display: inline-block;
     position: absolute;
@@ -210,7 +201,6 @@ figure {
     display: inline-block;
     position: absolute;
     top: -79px;
-    /* left: 540px; */
     right: 660px;
   }
 
@@ -218,10 +208,9 @@ figure {
     display: inline-block;
     position: absolute;
     top: 130px;
-    /* left: 630px; */
     right: 570px;
   }
-  
+
   .formula-vegan {
     transform: translateX(0);
     display: inline-block;
