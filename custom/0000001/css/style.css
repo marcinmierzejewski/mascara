@@ -76,11 +76,11 @@ figure {
 }
 
 .product-item {
-  width: 396px;
+  width: 396px;  
 }
 
 .product-item:not(:last-child) {
-  margin-right: 6px;  
+  margin-right: 6px;
   margin-bottom: 40px;
 }
 
@@ -106,32 +106,127 @@ figure {
 }
 
 .section-formula {
-  height: 714px;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1300px) {
+  .section-formula {
+    padding-top: 79px;
+    padding-bottom: 89px;
+  }
+}
+
+.wrapper-formula {   
+  display: flex;
   max-width: 1300px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 585px;
+  margin: 0 auto;
+  position: relative;
   background-image: url("../assets/background.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1300px) {
+  .wrapper-formula {
+    justify-content: flex-end;
+  }
+}
+
+.formula-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  text-align: center;
+  /* width: 370px;
+  margin-right: 127px; */
+  margin-top: 98px;
+  /* padding-top: 98px;
+  padding-right: 227px; */
+}
+
+@media screen and (min-width: 1300px) {
+  .formula-content {
+    width: 100%;
+  }
+}
+
+.formula-title {
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 55px;
+  display: block;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  /* width: 254px; */
+  /* padding-top: 98px;
+  padding-left: 227px; */
+}
+
+.formula-mascara-open,
+.formula-mascara-close,
 .formula-image {
-  position: absolute;
-  object-fit: scale-down;
-  top: 64.5px;
-  left: 0;
+  display: none;
 }
 
-.formula-mascara-open{
-  position: absolute;
-  object-fit: scale-down;
-  top: 0;
-  left: 540px;
+.formula-vegan {
+  display: inline-block;
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    transform: translateX(50%);
 }
 
-.formula-mascara-close{
-  position: absolute;
-  object-fit: scale-down;
-  top: 209px;
-  left: 630px;
+@media screen and (min-width: 1300px) {
+  .formula-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 370px;
+    margin-right: 102px;
+    margin-top: 98px;
+    /* padding-top: 98px;
+    padding-right: 227px; */
+  }
+  
+  .formula-image {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .formula-mascara-open {
+    display: inline-block;
+    position: absolute;
+    top: -79px;
+    /* left: 540px; */
+    right: 660px;
+  }
+
+  .formula-mascara-close {
+    display: inline-block;
+    position: absolute;
+    top: 130px;
+    /* left: 630px; */
+    right: 570px;
+  }
+  
+  .formula-vegan {
+    transform: translateX(0);
+    display: inline-block;
+    position: absolute;
+    top: 375px;
+    right: 353px;
+  }
 }
